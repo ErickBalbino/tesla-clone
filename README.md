@@ -8,7 +8,7 @@ Clone do layout da tesla
 
 ## Para rodar na sua máquina
 ```
-$ git clone
+$ git clone https://github.com/ErickBalbino/tesla-clone.git
 $ cd tesla-clone
 $ npm install styled-components
 $ npm install react-router-dom
