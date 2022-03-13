@@ -1,25 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
 
 export default function Section({title, description, backgroundImg, btnTextLeft, btnTextRight}) {
   return (
     <Wrap bgImage={backgroundImg}>
-        <ItemText>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </ItemText>
+        <Fade bottom opposite>
+          <ItemText>
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </ItemText>
+        </Fade>
 
         <Buttons>
-          <ButtonGroup>
-            <LeftButton>
-              {btnTextLeft}  
-            </LeftButton>
+          <Fade bottom>
+            <ButtonGroup>
+              <LeftButton>
+                {btnTextLeft}  
+              </LeftButton>
 
-            {btnTextRight && 
-            (<RightButton>
-              {btnTextRight}
-            </RightButton>)}
-          </ButtonGroup>
+              {btnTextRight && 
+              (<RightButton>
+                {btnTextRight}
+              </RightButton>)}
+            </ButtonGroup>
+          </Fade>
 
           <DownArrow />
         </Buttons>

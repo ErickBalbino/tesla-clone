@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Footer from './Footer'
 
 import Section from './Section'
 
@@ -62,6 +63,7 @@ export default function Home() {
         btnTextLeft="Shop Now"
       />
       
+      <Footer />
     </Container>
   )
 }
