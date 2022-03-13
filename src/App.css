@@ -15,10 +15,6 @@ body{
     height: 100vh;
 }
 
-.react-reveal{
-    animation-fill-mode: backwards !important;
-}
-
 @keyframes animationArrow {
     0%{
         transform: translateY(-3px);

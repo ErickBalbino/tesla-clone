@@ -5,26 +5,22 @@ import Fade from 'react-reveal/Fade'
 export default function Section({title, description, backgroundImg, btnTextLeft, btnTextRight}) {
   return (
     <Wrap bgImage={backgroundImg}>
-        <Fade bottom opposite>
-          <ItemText>
-            <h1>{title}</h1>
-            <p>{description}</p>
-          </ItemText>
-        </Fade>
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
 
         <Buttons>
-          <Fade bottom>
-            <ButtonGroup>
-              <LeftButton>
-                {btnTextLeft}  
-              </LeftButton>
+          <ButtonGroup>
+            <LeftButton>
+              {btnTextLeft}  
+            </LeftButton>
 
-              {btnTextRight && 
-              (<RightButton>
-                {btnTextRight}
-              </RightButton>)}
-            </ButtonGroup>
-          </Fade>
+            {btnTextRight && 
+            (<RightButton>
+              {btnTextRight}
+            </RightButton>)}
+          </ButtonGroup>
 
           <DownArrow />
         </Buttons>
