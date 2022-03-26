@@ -1,6 +1,9 @@
 # Tesla Clone
 Clone do layout da tesla 
 
+## Layout 
+![tesla](https://user-images.githubusercontent.com/78397162/158074145-b9a1312b-4707-4fc4-9cbd-1cb89afe7109.gif)
+
 ## Desenvolvido com 
 * React
 * Styled Components
